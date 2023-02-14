@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', 'Arial';
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Barra de navegação*/
+.nav-bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background-color: whitesmoke;
+    position: fixed;
+    min-width: 360px;
+    user-select: none;
+}
+
+#logo-img{
+    width: 50px;
+    margin-left: 20px;
+    user-select: none;
+}
+
+.nome-logo{
+    margin-left: 10px;
+    font-size: 18px;
+    user-select: none;
+}
+
+.nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 60px;
+    list-style: none;
+    user-select: none;
+}
+
+.nav-content li{
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-content a{
+    text-decoration: none;
+    color: #A9A9A9;
+    transition: all .3s;
+}
+
+.nav-content a:hover{
+    color: #038d03;
+    font-weight: bold;
+}
+
+.nav-content li:last-child{
+    margin-right: 40px;
+}
+
+/*Conteúdo da pagina inicial*/
+
+.content{
+    width: 100%;
+    height: 100vh;
+    padding: 75px 0 10px;
+    background-image: linear-gradient(to right,#038d03, #32e232);
+}
+
+.home{
+    width: 100%;
+    height: 100%;
+}
+
+.content-home{
+    width: 600px;
+    text-align: start;
+    color: whitesmoke;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 40px;
+    user-select: none;
+}
+
+.content-home:first-child{
+    margin-top: 60px;
+    font-size: 60px;
+}
+
+.content-home-sub{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 50px;
+    border: 2px solid whitesmoke;
+    margin: 30px auto 0;
+    font-size: 18px;
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: -2px 0px 0px whitesmoke;
+    user-select: none;
+    
+}
+
+.content-home-sub p{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.content-home-sub a{
+    margin-left: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .3s;
+}
+
+.content-home-sub a:hover{
+    color: #038d03;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*Biografia*/
+
+.biografia{
+    width: 60%;
+    height: 100%;
+    margin: 40px auto;
+    user-select: none;
+}
+
+.biografia h1{
+    font-size: 40px;
+    color: darkgreen;
+}
+
+.biografia p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Rodape*/
+
+.rodape{
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to right,#038d03, #32e232);
+    user-select: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.rodape a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.rodape i{
+    margin: 2px 0;
+}
+
+
+@media screen and (min-width: 1050px){
+
+    .content-home{
+        width: 700px;
+        font-size: 50px;
+    }
+
+    .content-home:first-child{
+        font-size: 70px;
+    }
+
+    .content-home-sub{
+        width: 700px;
+        font-size: 20px;
+    }
+
+    .biografia{
+        width: 50%;
+    }
+
+    .biografia h1{
+        font-size: 50px;
+    }
+
+    .biografia p{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+
+    .content{
+        height: 90vh;
+    }
+
+    .content-home{
+        width: 500px;
+        font-size: 30px;
+    }
+
+    .content-home:first-child{
+        margin-top: 80px;
+        font-size: 50px;
+    }
+
+    .content-home-sub{
+        width: 520px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .nav-bar{
+        height: 120px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5px;
+    }
+
+    #logo-img{
+        margin-left: 0;
+    }
+
+    .nome-logo{
+        margin-left: 0;
+    }
+
+    .nav-content li{
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+
+    }
+
+    .nav-content li:last-child{
+        margin-right: 20px;
+    }
+
+    .content{
+        height: 70vh;
+    }
+
+    .content-home{
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .content-home:first-child{
+        margin-top: 80px;
+        font-size: 40px;
+    }
+
+    .content-home-sub{
+        width: 400px;
+        font-size: 14px;
+    }
+
+    .content-home-sub a {
+        text-align: center;
+        margin-right: 2px;
+    }
+
+    .biografia{
+        width: 80%;
+    }
+
+    .biografia h1{
+        font-size: 30px;
+    }
+
+    .biografia p{
+        font-size: 16px;
+    }
+}
